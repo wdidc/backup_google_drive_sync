@@ -1,8 +1,6 @@
 require 'google/api_client'
 require 'google_drive'
-require 'pry'
 require './env' if File.exists?('env.rb')
-require 'httparty'
 
 BACKUP_DIR = "./bak"
 FILES_TO_BACKUP = Dir.glob("#{BACKUP_DIR}/*#{Date.today}*").join(" ")
